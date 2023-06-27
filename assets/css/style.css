@@ -1,0 +1,158 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cards {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    gap: 30px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 20px;
+    background-color: #fffcfc;
+    cursor: pointer;
+    border: 1px solid rgb(228, 223, 223);
+    border-radius: 8px;
+}
+.content{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.image{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 25px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    columns: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 15px;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    columns: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 15px;
+}
+
+.list{
+    width:100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    gap: 20px;
+    background-color: #fffcfc;
+    cursor: pointer;
+    border: 1px solid rgb(228, 223, 223);
+    border-radius: 8px;
+    padding-left: 20px;
+}
+.cards-list {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.content-list{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.enlarged{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 0;
+}
+.closer{
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 3;
+}
+.card-clicked {
+    position: relative;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 20px;
+    background-color: #fffcfc;
+    border: 1px solid rgb(228, 223, 223);
+    border-radius: 8px;
+    z-index: 4;
+  }
+  .content-enlarged{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .closeButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    z-index: 5;
+    color: black;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+  }
+  .clicked{
+    color: orange !important;
+    transition: .3s !important;
+  }

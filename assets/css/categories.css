@@ -1,0 +1,108 @@
+
+.mainNav{
+    height: 230px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.listType{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.listType h2{
+    width: 60%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.categories{
+    position: relative;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;   
+    
+ 
+}
+.mainNav .allCategories{
+ 
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    left: 15px;
+    top: 0;
+    align-items: center;
+    gap: 20px;
+    
+   
+   
+}
+.categories::-webkit-scrollbar {
+    display: none; 
+  }
+
+.allCategories .category {
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 50px;
+    color: white;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     list-style-type: none;
+     width: 100%;
+     padding: 15px 15px 15px 10px;
+     gap:10px;
+     white-space: nowrap;
+     border: 2px solid rgb(231, 189, 50);
+     border-radius: 12px;
+     color: black;
+     font-weight: bold;
+     cursor: pointer;
+     transition: .3s;
+}
+.categoryActive{
+    background-color: rgb(231, 189, 50);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: .3s;
+}
+.styles i{
+    font-size: 1.5rem;
+    color:grey ;
+    cursor: pointer;
+}
+.styles {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.category img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.empty{
+    width: 100%;
+    height: 100%;
+}
+.emp{
+    width: 1px;
+}
